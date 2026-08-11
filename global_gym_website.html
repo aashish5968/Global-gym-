@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Global Gym | Rajendra Nagar, Patna</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:Arial,Helvetica,sans-serif;background:#080808;color:#fff;line-height:1.6}
+a{text-decoration:none;color:inherit}
+header{position:fixed;top:0;left:0;width:100%;z-index:10;background:rgba(8,8,8,.92);backdrop-filter:blur(10px);border-bottom:1px solid #242424}
+.nav{max-width:1100px;margin:auto;padding:15px 20px;display:flex;align-items:center;justify-content:space-between}
+.logo{font-size:24px;font-weight:900;letter-spacing:1px}.logo span{color:#ff3b30}
+nav a{margin-left:18px;color:#ccc;font-size:14px}
+.hero{min-height:100vh;display:flex;align-items:center;padding:110px 20px 60px;background:radial-gradient(circle at 80% 25%,#3a0905 0,#160604 24%,#080808 55%);position:relative;overflow:hidden}
+.hero:after{content:"";position:absolute;right:-120px;bottom:-150px;width:430px;height:430px;border:70px solid rgba(255,59,48,.08);border-radius:50%}
+.wrap{max-width:1100px;margin:auto;width:100%}
+.badge{display:inline-block;padding:7px 13px;border:1px solid #3b3b3b;border-radius:30px;color:#ff6a60;font-size:12px;text-transform:uppercase;letter-spacing:2px;margin-bottom:18px}
+h1{font-size:clamp(48px,10vw,92px);line-height:.95;max-width:800px;text-transform:uppercase}
+h1 span{color:#ff3b30}
+.hero p{max-width:620px;color:#bdbdbd;margin:24px 0;font-size:17px}
+.buttons{display:flex;gap:12px;flex-wrap:wrap}
+.btn{display:inline-block;padding:13px 20px;border-radius:8px;font-weight:800;border:1px solid #333}
+.primary{background:#ff3b30;border-color:#ff3b30}.secondary{background:#111}
+section{padding:85px 20px}
+.section-title{font-size:38px;text-transform:uppercase;margin-bottom:10px}
+.section-sub{color:#999;margin-bottom:35px}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.card{background:#111;border:1px solid #252525;border-radius:14px;padding:28px}
+.card h3{font-size:25px;margin-bottom:10px}.price{font-size:38px;font-weight:900;color:#ff4b40}.muted{color:#999}
+.highlight{border-color:#ff3b30;box-shadow:0 0 30px rgba(255,59,48,.08)}
+.features{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.feature{background:#101010;border:1px solid #222;padding:22px;border-radius:12px}.icon{font-size:28px}
+.contact{background:#0d0d0d}.contactbox{display:grid;grid-template-columns:1fr 1fr;gap:20px}
+.info{background:#121212;border:1px solid #262626;border-radius:14px;padding:26px}
+.info p{margin:10px 0;color:#bbb}
+footer{padding:28px 20px;text-align:center;color:#777;border-top:1px solid #222;font-size:13px}
+@media(max-width:800px){nav{display:none}.grid{grid-template-columns:1fr}.features{grid-template-columns:1fr 1fr}.contactbox{grid-template-columns:1fr}}
+@media(max-width:450px){.features{grid-template-columns:1fr}.hero p{font-size:15px}}
+</style>
+</head>
+<body>
+<header>
+  <div class="nav">
+    <div class="logo">GLOBAL<span>GYM</span></div>
+    <nav><a href="#home">Home</a><a href="#plans">Plans</a><a href="#about">About</a><a href="#contact">Contact</a></nav>
+  </div>
+</header>
+
+<main>
+<section class="hero" id="home">
+<div class="wrap">
+  <div class="badge">Rajendra Nagar • Patna</div>
+  <h1>Build Your <span>Strength.</span></h1>
+  <p>Train harder. Get stronger. Stay consistent. Welcome to Global Gym — your local fitness destination near Kali Mandir, Bazar Samiti.</p>
+  <div class="buttons">
+    <a class="btn primary" href="#plans">View Membership</a>
+    <a class="btn secondary" href="https://wa.me/918092427649" target="_blank">WhatsApp Us</a>
+  </div>
+</div>
+</section>
+
+<section id="about">
+<div class="wrap">
+  <h2 class="section-title">Why Global Gym?</h2>
+  <p class="section-sub">A focused place to train, improve and stay consistent.</p>
+  <div class="features">
+    <div class="feature"><div class="icon">🏋️</div><h3>Serious Training</h3><p class="muted">A dedicated environment for your fitness journey.</p></div>
+    <div class="feature"><div class="icon">💪</div><h3>Build Strength</h3><p class="muted">Work on strength, fitness and consistency.</p></div>
+    <div class="feature"><div class="icon">🔥</div><h3>Stay Motivated</h3><p class="muted">Show up, train hard and keep progressing.</p></div>
+    <div class="feature"><div class="icon">📍</div><h3>Easy Location</h3><p class="muted">Near Kali Mandir, Bazar Samiti, Rajendra Nagar.</p></div>
+  </div>
+</div>
+</section>
+
+<section id="plans">
+<div class="wrap">
+  <h2 class="section-title">Membership Plans</h2>
+  <p class="section-sub">Choose the plan that works for you.</p>
+  <div class="grid">
+    <div class="card"><h3>1 Month</h3><div class="price">₹600</div><p class="muted">Monthly membership</p><br><a class="btn secondary" href="https://wa.me/918092427649?text=Hi%20Global%20Gym%2C%20I%20want%20the%201%20month%20membership." target="_blank">Join Now</a></div>
+    <div class="card highlight"><h3>2 Months</h3><div class="price">₹1,100</div><p class="muted">Save ₹100</p><br><a class="btn primary" href="https://wa.me/918092427649?text=Hi%20Global%20Gym%2C%20I%20want%20the%202%20month%20membership." target="_blank">Join Now</a></div>
+    <div class="card"><h3>3 Months</h3><div class="price">₹1,500</div><p class="muted">Best long-term value</p><br><a class="btn secondary" href="https://wa.me/918092427649?text=Hi%20Global%20Gym%2C%20I%20want%20the%203%20month%20membership." target="_blank">Join Now</a></div>
+  </div>
+</div>
+</section>
+
+<section class="contact" id="contact">
+<div class="wrap">
+  <h2 class="section-title">Get In Touch</h2>
+  <p class="section-sub">Ready to start? Contact Global Gym.</p>
+  <div class="contactbox">
+    <div class="info"><h3>📍 Location</h3><p>Near Kali Mandir, Bazar Samiti,<br>Rajendra Nagar, Patna</p></div>
+    <div class="info"><h3>📞 Contact</h3><p>+91 80924 27649</p><div class="buttons"><a class="btn primary" href="tel:+918092427649">Call Now</a><a class="btn secondary" href="https://wa.me/918092427649" target="_blank">WhatsApp</a></div></div>
+  </div>
+</div>
+</section>
+</main>
+
+<footer>© 2026 Global Gym • Rajendra Nagar, Patna</footer>
+</body>
+</html>
